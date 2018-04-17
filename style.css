@@ -1,0 +1,553 @@
+/*css for all pages*/
+
+/*
+DON'T FORGET TO WRITE DESCRIPTIONS'*/
+
+body {
+    margin: 0px;
+    min-width: 100vw;
+    background-color: #fffdea;
+}
+
+/*fonts*/
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
+h2, h3 { 
+    font-family: 'Cormorant', serif; 
+}
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+a, p { 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ALL PAGES - NAVIGATION AND BOTTOM BARS */
+
+/*navigation bar start*/
+.navright img {
+    width: 18px;
+    height: 15px;
+}
+
+.navright ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    color: darkgrey;
+    margin: 0px;
+}
+
+.navright a {
+    color: slategrey;
+}
+
+
+.navright {
+    justify-content: space-between;
+    min-width: 30%;
+    max-width: 100%;
+    padding-top: 5px;
+}
+
+.navleft ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px; 
+}
+
+.navleft a {
+    color: slategrey;
+}
+
+.navleft {
+    justify-content: space-between;
+    min-width: 30%;
+    max-width: 100%;
+    padding-top: 5px;
+}
+
+    /*This .navfull positions the elements as a horizontal navigation bar*/
+.navfull {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    margin: 0px;
+    background-color: #fafad2;
+    border-bottom: 1px solid slategrey;
+    min-width: 30%;
+    max-width: 100%;
+    z-index: 1;
+}
+
+    /*The following .navfull sests the fixed navigation bar position*/
+.navfull {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.navcenter {
+    margin: 0px;
+    text-align: center;
+}
+
+.navcenter a {
+    color: slategrey;
+}
+
+.navcenter h3 {
+    margin: 0px;
+    font-size: 35px;
+}
+/*navigation bar end*/
+
+/*bottom bar start*/
+.first, .second, .third, .fourth {
+    height: 165px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first ul, .second ul, .third ul, .fourth ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.first li, .second li, .third li, .fourth li {
+    margin: 12px;
+    padding: 0px 5px 5px 0px;
+}
+
+.bottombar {
+    display: flex;
+    width: 978px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-top: 1px solid #211f30;
+    padding-top: 0px;
+}
+
+.first p, .second p, .third p, .fourth p {
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+.first a, .second a, .third a, .fourth a {
+    color: black;
+    padding-top: 0px;
+}
+/*bottom bar end*/
+
+
+/*----------------------------------------------------------*/
+
+/*HOMEPAGE START*/
+
+/*slideshow start. code from: https://codepen.io/daysahead/pen/mJqBge
+*/
+.slideshow img {
+    width: 978px;
+    height: 610px;
+}
+
+.slideshow {
+    padding-top: 65px;
+    overflow: hidden;/*hides the images that go outside of the following specified area*/
+    height: 610px;
+    width: 978px;
+    margin: 0 auto; 
+}
+
+.slide-wrapper { /*sets the total area that all the images will occupy*/
+   width: 3912px;
+   animation: slide 15s ease infinite; /*identifies type of animation, duration, timing function, and iteration count of the animation*/ 
+}
+
+.slide {
+   float: left;
+   height: 610px;
+   width: 978px;
+}
+
+@keyframes slide { /* @keyframes slides the total area to the identified margin when the animation is x% complete*/
+    20% {margin-left: 0px;}
+    30% {margin-left: -978px;}
+    50% {margin-left: -978px;}
+    60% {margin-left: -1956px;}
+    70% {margin-left: -1956px;}
+    80% {margin-left: -2934px;}
+    90% {margin-left: -2934px;}
+}
+/*slideshow end*/
+
+
+
+/*first 3 block div start*/
+.blockone, .blocktwo, .blockthree {
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+}
+    
+.blockone {
+    background-image: url(images/index/blurlightback.jpg);  
+}
+
+.blocktwo {
+    background-image: url(images/index/brownblurlightsbackground.jpeg);
+}
+
+.blockthree {
+    background-image: url(images/index/greenblurlightbackground.jpg);
+}
+
+.firstthree {
+    display: flex;
+    width: 978px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*first 3 block div end*/
+
+
+/*separating div 1 start*/
+.newars {
+    width: 978px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 35px;
+}
+
+.newars h3 {
+    margin-bottom: 0px;
+}
+/*separating div 1 end*/
+
+
+
+/*second 3 block div start*/
+.blocka, .blockb, .blockc {
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.secondthree {
+    display: flex;
+    width: 978px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 350px;
+    font-size: 18px;
+}
+
+.blocka p, .blockb p, .blockc p {
+    margin-top: 9px;
+}
+
+.blocka h4, .blockb h4, .blockc h4 {
+    margin-bottom: 9px;
+}
+
+.blockatext, .blocktext, .blockctext {
+    padding: 0px;
+}
+
+.blocka img, .blockb img, .blockc img {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+}   
+/*second 3 block div end*/
+
+
+/*4 block div start*/
+.onefour, .twofour, .threefour, .fourfour {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.firstfour {
+    display: flex;
+    width: 978px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+.onefour img {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+}
+
+.twofour img {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+}
+
+.threefour img {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+}
+
+.fourfour img {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+}
+/*4 block div end*/
+
+/*HOMEPAGE END*/
+
+
+/*----------------------------------------------------------*/
+
+/*ABOUT PAGE START*/
+
+.hero h1, .herotwo h1 {
+    color: #fdd475;
+    font-size: 80px;
+    opacity: .77;
+}
+
+.hero, .herotwo {
+    padding-top: 48px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 978px;
+    height: 610px;
+    margin: 0 auto;
+}
+
+.hero {
+  background-image: url(images/about/crafter.jpg);
+}
+
+/*descriptive divs start*/
+.topthree {
+    display: flex;
+    width: 978px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.topthree img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.midtext {
+    width: 27%;
+    padding: 20px;
+    align-content: center;
+    margin-bottom: 20px;
+}
+/*descriptive divs end*/
+
+
+
+/*big division start*/
+
+.herotwo {
+    background-image: url(images/about/leatherworker.jpg);
+}
+/*big division end*/
+
+
+/*image divs start*/
+.midthree {
+    display: flex;
+    width: 978px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.midthree img {
+    width: 100%;
+    margin-bottom: 40px;
+    height: 362.563px;
+}
+
+.midthree .midtexts  {
+    width: 48%;
+    align-content: center;
+}
+
+.midthreeone {
+    padding-bottom: 48px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;  
+    margin: 0 auto;
+    width: 978px;
+}
+
+.midthreeone img {
+    margin: 0px;
+    width: 978px;
+    height: 610px;
+}
+/*image divs end*/
+
+/*ABOUT PAGE END*/
+
+/*----------------------------------------------------------*/
+
+/*SHOP PAGE START*/
+
+.awesome h1 {
+    color: #fdd475;
+    font-size: 90px;
+    opacity: .88;
+    padding: 20px;
+    margin: 0px;
+}
+
+.awesome {
+    padding-top: 60px;
+    margin-top: 80px;
+    background-image: url(images/Shop/lotsofbracelets.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 978px;
+    height: 610px;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*zoom animation of items on shop page start*/
+.shopblockaimg {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+    transition: transform .2s
+}
+
+.shopblockaimg:hover {
+    transform: scale(1.3);
+}
+
+.shopblockbimg {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+    transition: transform .2s
+}
+
+.shopblockbimg:hover {
+    transform: scale(1.3);
+}
+
+.shopblockaimg {
+    width: 100%;
+    height: 225px;
+    background-repeat: no-repeat;
+    transition: transform .2s
+}
+
+.shopblockcimg:hover {
+    transform: scale(1.3);
+}
+/*zoom animation of items on shop page end*/
+
+/*SHOP PAGE END*/
+
+
+
+/*----------------------------------------------------------*/
+
+/*OOPSIE PAGE START*/
+
+.oops {
+    border: 6px solid black;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-size: 50px;
+    opacity: .77;
+}
+
+/*OOPSIE PAGE END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
