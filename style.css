@@ -460,7 +460,7 @@ a:hover {
 .awesome {
     padding-top: 60px;
     margin-top: 80px;
-    background-image: url(images/Shop/lotsofbracelets.jpg);
+    background-image: url(images/shop/lotsofbracelets.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
